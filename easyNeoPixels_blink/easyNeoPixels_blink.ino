@@ -1,8 +1,8 @@
 #include <EasyNeoPixels.h>
 
 void setup() {
-    // setup for one NeoPixel attached to pin 13
-    setupEasyNeoPixels(13, 1);
+    // setup for one NeoPixel attached to pin 11
+    setupEasyNeoPixels(11, 1);
 }
 
 void loop() {
