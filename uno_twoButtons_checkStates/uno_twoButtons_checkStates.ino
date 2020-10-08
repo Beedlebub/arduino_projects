@@ -1,16 +1,27 @@
 // Constants:
-const int BUTTON_1_PIN = 8; // the number of the pushbutton pin
+// the number of the pushbutton pin
+const int BUTTON_1_PIN = 8;
 const int BUTTON_2_PIN = 9;
 
 // Variables:
-int lastState_BUTTON_1 = LOW;  // the previous state from the input pin
-int currentState_BUTTON_1;     // the current reading from the input pin
+// the previous state from the input pin
+int lastState_BUTTON_1 = LOW;
 int lastState_BUTTON_2 = LOW;
+// the current reading from the input pin
+int currentState_BUTTON_1;
 int currentState_BUTTON_2;
 
 void setup() {
-  // code here runs once at boot
-  Serial.begin(115200);
+  // the setup function runs once when you press reset or power the board
+
+  // Open serial communications and wait for port to open:
+  Serial.begin(57600);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  Serial.println("Hello!");
+
+  // set the two button pins to input, and use a pull-up resistor
   pinMode(BUTTON_1_PIN, INPUT_PULLUP);
   pinMode(BUTTON_2_PIN, INPUT_PULLUP);
 }

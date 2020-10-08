@@ -16,21 +16,30 @@
   http://www.arduino.cc/en/Tutorial/Fading
 */
 
-int ledPin = 3;    // LED connected to digital pin o
+// LED connected to digital pin
+int ledPin = 3;
 
 void setup() {
-  // nothing happens in setup
+  // the setup function runs once when you press reset or power the board
+
+  // Open serial communications and wait for port to open:
+  Serial.begin(57600);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  Serial.println("Hello!");
 }
 
 void loop() {
+  // this code is run in a loop, forever
+
   // fade in from min to max in increments of 5 points:
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 5) {
     // sets the value (range from 0 to 255):
     analogWrite(ledPin, fadeValue);
-    // wait for 30 milliseconds to see the dimming effect
+    // wait for xx milliseconds to see the dimming effect
     delay(24);
   }
-
   // fade out from max to min in increments of 5 points:
   for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 5) {
     // sets the value (range from 0 to 255):
