@@ -1,6 +1,6 @@
 // Constants:
-const int BUTTON_1_PIN = 8; // the number of the pushbutton pin
-const int BUTTON_2_PIN = 9;
+const int BUTTON_1_PIN = 1; // the number of the pushbutton pin
+const int BUTTON_2_PIN = 2;
 
 // Variables:
 int lastState_BUTTON_1 = LOW;  // the previous state from the input pin
