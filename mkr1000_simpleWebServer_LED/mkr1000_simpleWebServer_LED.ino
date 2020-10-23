@@ -14,7 +14,7 @@
 char ssid[] = "ORBI11";      //  your network SSID (name)
 char pass[] = "Eyel0veNYC";   // your network password
 int keyIndex = 0;                 // your network key Index number (needed only for WEP)
-int ledpin = 6;
+int ledpin = LED_BUILTIN;
 bool val = true;
  
 int status = WL_IDLE_STATUS;

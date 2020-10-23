@@ -7,7 +7,7 @@
 */
 
 // constants won't change. They're used here to set pin numbers:
-const int BUTTON_PIN = 12; // the number of the pushbutton pin
+const int BUTTON_PIN = 1; // the number of the pushbutton pin
 const int SHORT_PRESS_TIME = 500; // 500 milliseconds
 
 // Variables will change:

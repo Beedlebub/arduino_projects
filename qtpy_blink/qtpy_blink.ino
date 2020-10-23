@@ -1,4 +1,4 @@
-int LED = 3;
+int LED = 0;
 int DELAY = 200; //14 I start to see flicker; 12 or less, I don't see flicker
 
 void setup() {

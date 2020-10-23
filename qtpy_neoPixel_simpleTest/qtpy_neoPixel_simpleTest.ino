@@ -7,7 +7,7 @@
 #endif
 
 // Which pin on the Arduino is connected to the NeoPixels?
-#define PIN            6
+#define PIN            11
 
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS      1
@@ -32,7 +32,7 @@ void loop() {
   for(int i=0;i<NUMPIXELS;i++){
 
     // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
-    pixels.setPixelColor(i, pixels.Color(150,0,0)); // Moderately bright green color.
+    pixels.setPixelColor(i, pixels.Color(150,150,0)); // Moderately bright green color.
 
     pixels.show(); // This sends the updated pixel color to the hardware.
 

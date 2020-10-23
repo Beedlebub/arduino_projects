@@ -1,6 +1,6 @@
-const int BUTTON_A = 5;
-const int BUTTON_B = 4;
-const int LED = LED_BUILTIN;
+const int BUTTON_A = 1;
+const int BUTTON_B = 2;
+const int LED = 3;
 int BUTTON_A_state = 0;
 int BUTTON_B_state = 0;
 

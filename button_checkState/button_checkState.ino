@@ -11,6 +11,7 @@ int currentState_BUTTON_2;
 void setup() {
   // code here runs once at boot
   Serial.begin(115200);
+  Serial.println("Hello!");
   pinMode(BUTTON_1_PIN, INPUT_PULLUP);
   pinMode(BUTTON_2_PIN, INPUT_PULLUP);
 }
