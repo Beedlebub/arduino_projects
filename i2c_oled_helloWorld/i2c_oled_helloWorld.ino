@@ -41,10 +41,10 @@ void setup() {
   display.setCursor(0, 0);      // Start at top-left corner
 
   // There is enough space for four lines of text with this screen size. You can specify the stating location of each line, or just print up to four lines after specifting the initial start posistion of 0, 0
-  //display.println(F("Line 1"));
-  //display.println(F("Line 2"));
-  //display.println(F("Line 3"));
-  //display.println(F("Line 4"));
+  display.println(F("Line 1"));
+  display.println(F("Line 2"));
+  display.println(F("Line 3"));
+  display.println(F("Line 4"));
 
   // Show the display buffer on the screen. You MUST call display() after
   // drawing commands to make them visible on screen!
